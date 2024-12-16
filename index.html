@@ -1,0 +1,169 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    Electricity Bill
+  int unit;
+  cout<<"enter your unit";
+  cin>>unit;
+  if(unit>=0&& unit<=50){
+      cout<<unit*10;
+  }
+  else if(unit>=50&&unit<=100){
+      cout<<50*10+(unit-50)*20;
+  }
+  else if(unit>=100&&unit<=150){
+      cout<<50*10+50*20+(unit-100)*30;
+  }
+  else{
+      cout<<50*10+50*20+50*30+(unit-150)*40;
+  }
+
+int option;
+cout<<"enter 1 for squre: 2 for triangle: 3 for ractangle: 4 for circle:"<<endl;
+cin>>option;
+if(option==1){
+    int side;
+    cout<<"enter side";
+    cin>>side;
+    cout<<"square";
+    cout<<" ";
+    cout<<side*side;
+}
+else if(option==2){
+    int base;
+    int height;
+    cout<<"enter value";
+    cin>>base>>height;
+    cout<<"triangle";
+    cout<<" ";
+    cout<<(base*height)/2;
+}
+else if(option==3){
+    int length;
+    int breath;
+    cout<<"enter value";
+    cin>>length>>breath;
+    cout<<"rectengle";
+    cout<<" ";
+    cout<<length*breath;
+}
+else if(option==4){
+    float radius;
+    cout<<"enter value";
+    cin>>radius;
+    cout<<"circle" <<" ";
+    cout<<(22*radius*radius)/7;
+}
+else{
+    cout<<"invalid input";
+}
+
+char ch;
+cout<<"enter value"<<endl;
+cin>>ch;
+if(ch>='a'&&ch<='z'||ch>='A'&&ch<='Z'){
+    cout<<ch;
+}
+else {
+    cout<<"invalid input";
+}
+
+int number;
+cout<<"enter number";
+cin>>number;
+if(number>0){
+    cout<<"positive";
+}
+else if(number<0){
+    cout<<"negative";
+}
+else{
+    cout<<"zero";
+}
+
+
+Traffic signle
+
+int signle;
+cout<<"enter number";
+cin>>signle;
+if(signle==1){
+    cout<<"red";
+}
+else if(signle==2){
+    cout<<"green";
+}
+else if(signle==3){
+    cout<<"yellow";
+    
+}
+else{
+    cout<<"invalid number";
+}
+
+        int mrp;
+        int discount,sp;
+        cout<<"enter value";
+        cin>>mrp;
+        if(mrp>=10000&&mrp<=20000){
+            discount=(10*mrp/100);
+            sp=mrp-discount;
+            cout<<"discount="<<discount<<endl<<"sp="<<sp;
+        }
+        else if(mrp>=20000&&mrp<=40000){
+            discount=(20*mrp)/100;
+            sp=mrp-discount;
+            cout<<"discount="<<discount<<endl<<"sp="<<sp;
+        }
+        else if(mrp>=40000&&mrp<=60000){
+            discount=(30*mrp)/100;
+            sp=mrp-discount;
+            cout<<"discount="<<discount<<endl<<"sp="<<sp;
+        }
+        else
+    {
+        cout<<"invalid input";
+    } 
+    
+    int num;
+    cout<<"enter num";
+    cin>>num;
+    if(num%2==0&&num%3==0){
+        cout<<"divisible by both";
+    }
+    else if(num%2==0){
+        cout<<"divisible only 2";
+    }
+    else if(num%3==0){cout<<"divisible by 3";
+        
+    }
+    else {
+        cout<<"invalid input";
+    }
+    
+    
+    int option;
+    cout<<"enter value 1for 2 variable 2 for 3 variable";
+    cin>>option;
+    if(option==1){
+        int a,b,c;
+        a=10;
+        b=20;
+        c=a;
+        a=b;
+        b=c;
+        cout<<a<<endl<<b;
+    }
+    else if(option==2){
+        int a=30;
+        int b=40;
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        cout<<a<<endl<<b;
+    }
+    else {
+        cout<<"invalid";
+    }
+    }
